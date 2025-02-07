@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Бизнес Клуб - ваш партнер в решении бизнес-задач. Найдите информацию о наших услугах и перейдите на связанные страницы.">
+    <meta name="description" content="Бизнес Клуб - ваш партнер в решении бизнес-задач.">
     <meta name="author" content="Ваше Имя">
     <meta name="apple-mobile-web-app-title" content="BusinessClub">
+    <meta property="og:title" content="Бизнес Клуб">
+    <meta property="og:description" content="Ваш партнер в решении бизнес-задач.">
+    <meta property="og:image" content="images/favicon.ico">
+    <meta property="og:url" content="/">
     <title>Бизнес Клуб</title>
-    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="bg-dark text-white py-3">
+    <header>
         <div class="container">
             <h1 class="text-center">Бизнес Клуб</h1>
             <p class="text-center">Ваш партнер в решении бизнес-задач</p>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">Бизнес Клуб</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#links">Ссылки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articles">Статьи</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
                 </ul>
             </div>
@@ -42,37 +43,28 @@
     </nav>
 
     <main class="container my-5">
-        <section id="about" class="mb-5">
-            <h2>О нас</h2>
-            <p>Здесь вы можете разместить информацию о вашем бизнесе, целях и ценностях.</p>
+        <section id="articles">
+            <h2>Как важно правильно вести бизнес</h2>
+            <p>В современном мире успех бизнеса зависит от правильного подхода и использования новейших инструментов...</p>
         </section>
 
-        <section id="services" class="mb-5">
-            <h2>Наши услуги</h2>
-            <p>Опишите ваши основные услуги или предложения, которые вы предоставляете клиентам.</p>
-        </section>
-
-        <section id="links" class="mb-5">
-            <h2>Полезные ссылки</h2>
-            <ul>
-                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Связанная страница 1</a></li>
-                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Связанная страница 2</a></li>
-                <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Реферальная ссылка 1</a></li>
-            </ul>
-        </section>
-
-        <section id="contact" class="mb-5">
-            <h2>Контакты</h2>
-            <p>Добавьте контактные данные, например, телефон, email или форму обратной связи.</p>
+        <section class="cards-container">
+            <a href="https://taxcom.ru/partner-form/?refLinkId=74349" class="card" target="_blank">
+                <img src="images/Taxcom.webp" alt="Taxcom_webp">
+                <h3>Электронная подпись ЭЦП</h3>
+                <p>Оформите свою электронную подпись для различных задач — подписания документов, участия в торгах и других операций. Всё это доступно онлайн!</p>
+            </a>
+            <!-- Остальные карточки -->
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-3">
+    <footer>
         <div class="container text-center">
             <p>&copy; 2024 Бизнес Клуб. Все права защищены.</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
