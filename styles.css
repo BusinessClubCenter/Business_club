@@ -8,6 +8,10 @@ body {
     animation: bganimation 14s infinite;
 }
 
+.text-center {
+    font-style: italic;
+}
+
 @keyframes bganimation {
     0% {
         background-position: 0% 50%;
@@ -28,6 +32,7 @@ body {
     margin: 50px 0;
     font-size: 24px;
     animation: fadeIn 2s ease-out;
+    
 }
 
 @keyframes fadeIn {
@@ -49,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Сделаем так, чтобы содержимое не смещалось вниз */
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -57,17 +62,19 @@ body {
     background: rgba(255, 255, 255, 0.2); /* Прозрачный фон */
     transition: transform 0.2s, box-shadow 0.3s;
     backdrop-filter: blur(5px);
-    min-height: 220px;
+    min-height: 300px;  /* Увеличиваем минимальную высоту для корректного отображения */
     text-align: center;
     overflow: hidden; /* Убираем переполнение */
+    position: relative; /* Это поможет нам контролировать размещение элементов */
 }
 
 /* Стиль для изображения в карточке */
 .card img {
-    width: 150px;  /* Фиксированная ширина */
-    height: 150px; /* Фиксированная высота */
+    width: 100%; /* Устанавливаем ширину 100% для соответствия ширине карточки */
+    height: auto; /* Автоматически регулируем высоту с пропорциями */
     object-fit: cover; /* Заполняет область без искажений */
-    border-radius: 50%; /* Делаем круглые изображения */
+    border-radius: 8px; /* Немного округлим углы */
+    margin-bottom: 15px; /* Добавим отступ снизу для картинки */
 }
 
 /* Стиль для текста в карточке */
@@ -75,13 +82,24 @@ body {
     color: rgb(5, 5, 5);
     font-weight: normal;
     padding: 10px;
-    font-size: 12px; /* Замените на нужный размер */    
+    font-size: 13px;/* Замените на нужный размер */
+    font-style: italic;
+    margin-bottom: 10px; /* Отступ снизу */
 }
+
 .card h3 {
     color: rgb(66, 1, 1);
     font-weight: bold;
     padding: 10px;
-    font-size: 20px; /* Замените на нужный размер */  
+    font-size: 20px; /* Замените на нужный размер */
+}
+
+.card h2 {
+    color: rgb(38, 26, 26);
+    font-weight: normal;
+    padding: 10px;
+    font-size: 20px; /* Замените на нужный размер */
+    font-style: italic;
 }
 
 /* Оформление карточки при наведении */
