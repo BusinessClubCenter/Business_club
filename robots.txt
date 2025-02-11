@@ -1,0 +1,25 @@
+User-agent: YandexBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Yandex
+Disallow: /admin/
+Allow: /
+
+User-agent: YandexImages
+Disallow: /admin/
+Allow: /
+
+User-agent: YandexVideo
+Disallow: /admin/
+Allow: /
+
+User-agent: YandexMarket
+Disallow: /admin/
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://businessclubcenter.github.io/Business_club/sitemap.xml
